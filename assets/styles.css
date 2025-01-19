@@ -135,3 +135,57 @@ a {
   border-left: 3px solid rgb(136, 136, 136);
 }
 /* SHOWCASE END */
+
+/* FEATURES START */
+.features {
+  padding: 70px 0;
+}
+
+.feature__cards {
+  display: grid;
+  gap: 30px;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fill, 280px);
+}
+
+.feature-card__title {
+  color: rgb(34, 34, 34);
+  font-size: var(--text-m);
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.feature-card__text {
+  margin: 30px 0 20px;
+  color: var(--primary-text-color);
+  font-size: var(--text-s);
+  line-height: 1.6;
+}
+
+.feature-card__link {
+  text-transform: uppercase;
+  color: var(--coral);
+  line-height: 1.6;
+  font-weight: 700;
+}
+
+.feature-card__link span {
+  display: inline-block;
+  width: 40px;
+  border: 1.5px solid var(--coral);
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.feature-card__blocks {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.feature-card__block {
+  width: 8px;
+  height: 8px;
+  background-color: rgb(221, 221, 221);
+}
+/* FEATURES END */
