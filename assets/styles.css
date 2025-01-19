@@ -1,5 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --coral: background: rgb(234, 98, 92);
+  /* TEXT COLORS */
+  --primary-text-color: rgb(51, 51, 51);
+  --secondary-text-color: rgb(119, 119, 119);
+  /* FONT-SIZES */
+  --text-s: 15px;
+  --text-m: 18px;
+  --text-l: 50px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
+
+body {
+  scroll-behavior: smooth;
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 80%;
+  width: 1000px;
+}
+
+/* HEADER START */
+.header {
+  padding: 30px 0;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__list {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  gap: 30px;
+  justify-content: flex-end;
+
+}
+
+.header__link, .header__help {
+  display: block;
+  color: var(--primary-text-color);
+  margin-bottom: 6.5px;
+  font-size: 15px;
+}
+
+.header__item {
+  border-bottom: 1px solid transparent;
+}
+
+.header__item:hover {
+  border-bottom: 1px solid;
+}
+.header__item:hover .header__link {
+  color: rgb(102,102,102)
+}
+.header__help {
+  margin: 0 0 0 40px;
+  padding-bottom: 6.5px;
+  border-bottom: 1px solid transparent;
+
+}
+.header__help:hover {
+  color: rgb(102,102,102);
+  border-bottom: 1px solid;
+}
+/* HEADER END */
