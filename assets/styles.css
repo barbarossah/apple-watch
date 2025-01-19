@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --coral: background: rgb(234, 98, 92);
+  --coral: rgb(234, 98, 92);
   /* TEXT COLORS */
   --primary-text-color: rgb(51, 51, 51);
   --secondary-text-color: rgb(119, 119, 119);
@@ -23,8 +23,14 @@ body {
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
+  background-attachment: fixed;
+  background-image: image-set(
+    url("./images/runners-1.jpg") 1x,
+    url("./images/runners-1@2x.jpg") 2x
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
 li {
   list-style-type: none;
 }
@@ -34,15 +40,31 @@ a {
   color: inherit;
 }
 
+.component {
+  background-color: white;
+}
+
 .container {
   margin: 0 auto;
   max-width: 80%;
   width: 1000px;
 }
 
+.button {
+  width: 260px;
+  padding: 12px;
+  border: none;
+  color: white;
+  background-color: var(--coral);
+  line-height: 1.5;
+  font-size: var(--text-m);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 /* HEADER START */
 .header {
-  padding: 30px 0;
+  padding: 30px 0 79.5px;
 }
 
 .header__nav {
@@ -56,10 +78,10 @@ a {
   align-items: center;
   gap: 30px;
   justify-content: flex-end;
-
 }
 
-.header__link, .header__help {
+.header__link,
+.header__help {
   display: block;
   color: var(--primary-text-color);
   margin-bottom: 6.5px;
@@ -74,16 +96,42 @@ a {
   border-bottom: 1px solid;
 }
 .header__item:hover .header__link {
-  color: rgb(102,102,102)
+  color: rgb(102, 102, 102);
 }
 .header__help {
   margin: 0 0 0 40px;
   padding-bottom: 6.5px;
   border-bottom: 1px solid transparent;
-
 }
 .header__help:hover {
-  color: rgb(102,102,102);
+  color: rgb(102, 102, 102);
   border-bottom: 1px solid;
 }
 /* HEADER END */
+
+/* SHOWCASE START */
+.showcase {
+  padding: 91px 0 185px;
+  background-image: image-set(
+    url("./images/intro-bg.png") 1x,
+    url("./images/intro-bg-2x.png") 2x
+  );
+  background-repeat: no-repeat;
+  background-position: bottom 0 right -196px;
+}
+
+.chowcase__title {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.showcase__text {
+  padding-left: 40px;
+  width: 490px;
+  line-height: 1.5;
+  color: var(--secondary-text-color);
+  margin: 30px 0;
+  border-left: 3px solid rgb(136, 136, 136);
+}
+/* SHOWCASE END */
