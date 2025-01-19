@@ -17,10 +17,11 @@
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
-
-body {
+html {
   scroll-behavior: smooth;
-  max-width: 1600px;
+}
+body {
+  max-width: 1250px;
   width: 100%;
   margin: 0 auto;
   background-attachment: fixed;
@@ -113,10 +114,11 @@ a {
 /* SHOWCASE START */
 .showcase {
   padding: 91px 0 185px;
-  background-image: image-set(
+  /* background-image: image-set(
     url("./images/intro-bg.png") 1x,
     url("./images/intro-bg-2x.png") 2x
-  );
+  ); */
+  background-image: url("./images/intro-bg.png");
   background-repeat: no-repeat;
   background-position: bottom 0 right -196px;
 }
@@ -224,3 +226,29 @@ a {
   object-fit: cover;
 }
 /* BUY-NOW END */
+/* CONTROL HEALTH START */
+.control {
+  padding: 240px 0 240px;
+}
+
+.control .container {
+  display: flex;
+  justify-content: flex-end;
+}
+.control__info {
+  width: 490px;
+  color: white;
+}
+
+.control__title {
+  line-height: 1.2;
+  font-size: var(--text-l);
+}
+
+.control__text {
+  line-height: 1.5;
+  padding-left: 37px;
+  border-left: 3px solid;
+  margin: 30px 0;
+}
+/* CONTROL HEALTH END */
